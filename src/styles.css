@@ -1,0 +1,244 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #071b3a;
+    color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar h2 {
+    margin: 0;
+    color: #69c6ff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #69c6ff;
+}
+
+/* Home section */
+.hero {
+    background: linear-gradient(135deg, #071b3a, #155b9b);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Main button */
+.main-button {
+    display: inline-block;
+    background-color: #69c6ff;
+    color: #071b3a;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.main-button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* General sections */
+.section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #0b376b;
+    margin-bottom: 15px;
+}
+
+/* Cybersecurity tip cards */
+.tip-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-card h3 {
+    color: #155b9b;
+}
+
+.tip-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+button {
+    background-color: #155b9b;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #071b3a;
+    transform: translateY(-2px);
+}
+
+/* Add tip area */
+.add-box {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.add-box label {
+    font-weight: bold;
+    color: #0b376b;
+}
+
+.add-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c7d9;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.add-box input:focus {
+    outline: 2px solid #69c6ff;
+    border-color: #155b9b;
+}
+
+/* Community tips list */
+#item-list {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#item-list li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+#item-list li p {
+    margin: 5px 0 0;
+    color: #52708e;
+    font-size: 14px;
+}
+
+/* Hide extra information until the button is clicked */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #071b3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile screen styling */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .tip-card {
+        width: 100%;
+    }
+
+    #item-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

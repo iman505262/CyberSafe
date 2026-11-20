@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe - Cybersecurity Tips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2>CyberSafe</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tips">Security Tips</a></li>
+                <li><a href="#manage">Manage Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Stay Safe in the Digital World</h1>
+        <p>Learn simple ways to protect your information and stay safe online.</p>
+        <a href="#tips" class="main-button">Explore Security Tips</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About CyberSafe</h2>
+        <p>
+            CyberSafe shares helpful information about online safety.
+            Our goal is to help people understand cybersecurity and
+            protect their personal information.
+        </p>
+    </section>
+
+    <!-- Cybersecurity Tips -->
+    <section id="tips" class="section">
+        <h2>Cybersecurity Tips</h2>
+        <p>Here are some important ways to stay safe online.</p>
+
+        <div class="tip-grid">
+            <div class="tip-card">
+                <h3>Strong Passwords</h3>
+                <p>Use strong passwords and avoid using the same password everywhere.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>Avoid Phishing</h3>
+                <p>Be careful with suspicious emails and unknown links.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>Protect Your Information</h3>
+                <p>Do not share personal information with untrusted websites.</p>
+            </div>
+        </div>
+
+        <button id="more-info-button" onclick="toggleInfo()">
+            Show More Information
+        </button>
+
+        <p id="more-info" class="hidden">
+            Keep your software updated, use two-factor authentication,
+            and think carefully before clicking unknown links.
+        </p>
+    </section>
+
+    <!-- Add and Manage Tips -->
+    <section id="manage" class="section">
+        <h2>Share a Cybersecurity Tip</h2>
+        <p>Add your own tip to help others stay safe online.</p>
+
+        <div class="add-box">
+
+            <label for="title-input">Cybersecurity Tip:</label>
+            <input
+                type="text"
+                id="title-input"
+                placeholder="Enter a cybersecurity tip"
+            >
+
+            <label for="category-input">Security Category:</label>
+            <input
+                type="text"
+                id="category-input"
+                placeholder="Example: Password Safety"
+            >
+
+            <button onclick="addItem()">Add Tip</button>
+
+        </div>
+
+        <h3>Community Tips</h3>
+        <ul id="item-list"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CyberSafe | Learn. Protect. Stay Safe.</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
