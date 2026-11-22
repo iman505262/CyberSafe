@@ -145,13 +145,13 @@ I also refreshed the website to make sure the information remained saved in the 
 
 GitHub repository:
 
-[Add your GitHub repository URL after publishing]
+https://github.com/iman505262/CyberSafe
 
 ## Live Website
 
 Netlify website:
 
-[Add your Netlify website URL after deployment]
+https://cybersafe-5xti.netlify.app
 
 ## Known Issues
 
